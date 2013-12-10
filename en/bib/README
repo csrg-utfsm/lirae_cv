@@ -1,0 +1,28 @@
+Master bibliography databases for CSRG (and possibly others...)
+
+The files here collect the (hopefully complete, checked and correct)
+references used in the papers of the CSRG projects.
+
+To extract the exact entries used in a particular paper (so you can ship the
+source with the complete bibliography, but without extraneous entries), do:
+
+  $ pdflatex paper                     # Generate the paper.aux file
+                                       # using the full \bibliography{...}
+  $ bibtool -x paper.aux -o paper.bib  # Extract only the entries used here
+                                       # into paper.bib
+
+You will have to fix the \bibliography{...} to now use paper.bib.
+
+Please make an effort to get a complete entry, including full names of the
+authors, pages of the articles, numbers and volumes of journals, etc. The
+entry schema offered by AUC-TeX (xemacs or emacs) is a good guide of what
+you should look for. Please make sure to fill in the right fields. Also, if
+you find it, include the DOI reference.
+
+Also please don't use UTF8 (or other non-ASCII) codings here, the entries
+will also be used in documents written in pure ASCII. Likewise, don't use
+non-standard LaTeX commands, as you can't assume any particular packages are
+loaded.
+
+Send any patches (preferably in git format) by email to Horst H. von Brand
+<vonbrand@inf.utfsm.cl>
