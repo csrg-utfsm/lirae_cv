@@ -1,0 +1,15 @@
+The database files here contain:
+
+refs.bib:     External references
+csrg.bib:     Publications by CSRG members
+theses.bib:   Theses, memorias, ... from UTFSM
+reports.bib:  Technical reports from UTFSM
+licenses.bib: (Open source) licenses
+url.bib:      Entries that have only a reference as a webpage. Please
+              suggest alternatives on paper!
+
+For each of the above, if a *.wip file exists, it contains entries that
+don't qualify (yet) for inclusion, due to incomplete data, incorrect format,
+or some other problem. Please help fix the entries there to get into the
+official files!
+
