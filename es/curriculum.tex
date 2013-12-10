@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
+\usepackage{pdfpages}
+
+% personal data
+\firstname{\Huge LIRAE}
+\familyname{}
+\title{\small \textbf{Laboratory of Interdiciplinary Research on Astro-Engineering}}
+\address{}{Valparaíso, Chile}
+\mobile{+56 9 032 432 4562}
+\email{contacto@csrg.cl}
+\begin{document}
+\maketitle
+
+\section{Proyectos}
+\cventry{RAES}{Repackaging ACS for Embedded Systems}{ALMA Common Software (ACS) es un sistema difícil de implementar en sistemas con recursos limitados y pequeñas dimensiones (sistemas embebidos). El objetivo del proyecto fue ofrecer varias distribuciones de ACS (ACS-UTFSM), implementando un método de compilación alternativo a ACS usando autotools}{Colaboración: ESO}{Resultados: AWP, ECSA, ARPA}{Valparaíso}
+
+\cventry{SWAT}{Software development, Analysis and Testing}{Este acrónimo fue utilizado para llamar al equipo de desarrollo y QA, y su objetivo es desarrollar software de calidad, estableciendo estándares de calidad para los procesos de desarrollos y mejorar el equipo de software de ALMA-UTFSM}{Colaboración: ALMA, ESO, NRAO}{Rsultados: SSG, ACG, SMCG, GSME, EBE, H3E, CDBC}{Valparaíso}
+
+\cventry{gTCS}{Generic Telescope Control System}{El sistema de control del telescopio genérico (gTCS) pretendía ser un marco de base para el desarrollo y despliegue de la TCS de cualquier telescopio, independiente de su estructura física y el tipo de montaje que presenta. Se trabajó directamente con telescopios amateur y se comenzaron colaboraciones con observatorios de mayor escala}{Colaboración: ESO, ALMA, Universidad de Valparaíso}{Resultados: gTCS, CSAT}{Valparaíso}
+
+\cventry{AIA}{Artificial Intelligence in Astronomy}{Equipo que se formó con la misión de investigar y desarrollar soluciones para problemas complejos que emergen en la astronomía y que están en relación con la computación. Este grupo se enfocó particularmente en el área de planificación de observaciones}{Colaboración: ALMA, NRAO}{Resultados: MDAS, ASP, ASPu*, MAWRF}{Valparaíso, Santiago}
+
+\cventry{LIRAE-EG}{LIRAE Electronics Group}{El grupo de electrónica de LIRAE se formó el año 2012. Su primer proyecto el cual aún está en desarrollo es sobre procesado de señales usando la placa ROACH, que es una placa standalone basada en dispositivos FPGA}{Colaboración: ALMA}{Resultados: En Progreso}{Valparaíso}
+
+\section{Productos}
+%RAES
+\cventry{AWP}{ACS Windows Porting}{ACS funcionaba solamente en linux (Redhat y Scientific Linux), por lo que herramientas que estaban disponibles solo para Windows quedaban limitadas (por ejemplo LabView). El primer objetivo de este proyecto fue portar ACS a windows, primero Java, luego C++ y Python (usando Cygwin y después herramientas nativas de windows como Visual Studio)}{}{}{}
+
+\cventry{ECSA}{Evaluation of Compilation Systems for ACS}{ACS presenta una complejidad elevada en el uso de archivos de configuración (Makefiles), y provee una API para tres lenguajes de programación oficialmente soportado: C++, Java, Python. Su estructura es muy compleja cuando se quiere añadir o cambiar software y toma grandes tiempos de compilación. El objetivo fue examinar la versión actual de ACS, las posibles mejoras, proponer mejoras o implementar un nuevo sistema de compilación para ACS y comparar las soluciones propuestas con el sistema en ese entonces}{}{}{}
+
+\cventry{ARPA}{Alternative Real- Time Platform for ACS}{Como un framework de control, ACS interactúa con componentes real-time (usualmente sistemas embebidos). Usar ACS en diferentes Real-Time Operative System (RTOS) no es una tarea trivial, ya que cada RTOS tiene sus propias formas de hacer las cosas. La idea principal de este proyecto era configurar un test end-to-end de ejemplos real-time distribuidos, para validar ACS sobre RTOS, o proveer estándares o servicios real-time independientes para ACS}{}{}{}
+
+%SWAT
+\cventry{SSG}{Sampling System GUI}{El objetivo fue crear una interfaz gráfica en Java, corriendo sobre ACS, que le permitiera al usuario reunir datos y graficarlos. Esto se podía hacer en diferentes intervalos de tiempo, diferentes frecuencias, y agruparlos como el usuario quisiera. Los usuarios de este proyecto son operadores y astrónomos del Operation Support Facilities (OSF) de ALMA}{}{}{}
+
+\cventry{ACG}{Alarms Configuration GUI}{Es una aplicación que ayuda en la configuración del sistema de alarmas dado una configuración de deployment de ACS. Eta configuración puede ser almacenada en un archivo formato XML, bajo la estructura de ACS CBD. Por esto, la manutención de un sistema de alarmas consistente puede ser extremadamente tedioso y se puede perder mucho tiempo. Esta interfaz gráfica facilita este trabajo}{}{}{}
+
+\cventry{SMCG}{State Machine Code Generetor}{El proyecto buscaba la creación de una máquina de generación de código reusable. La propósito principal es tener una implementación de máquina de estados que permita ejecutar y controlar su lógica}{}{}{}
+
+\cventry{GSME}{Generic State Machine Engine}{El objetivo era implementar un generador de código que permita crear un componente de ACS en Java desde un UML Statecharts Model}{}{}{}
+
+\cventry{EBE}{Error Browser and Editor}{Interfaz gráfica que permite navegar, estudiar y agregar definiciones (tipos y códigos) en ACS}{}{}{}
+
+\cventry{H3E}{Hardware end to end example project}{La idea fue crear un ejemplo completo que demuestre ACS controlando algún hardware, incluyendo dispositivos de la plataforma, como sensores de humedad, pantallas LCD, pequeños motores, etc. Por ejemplo conectado al puerto serial de un computador. El primer prototipo se realizó usando Lego Mindstorm, que incluye motores y sensores simples}{}{}{}
+
+\cventry{CDBC}{CDB Checker}{El propósito de este proyecto es escribir herramientas que se pueden utilizar para comprobar archivos XML desde la línea de comandos}{}{}{}
+
+%gTCS
+\cventry{gTCS}{Generic Telescope Control System Prototype}{En la mayoría de los observatorios, cuando se construye un nuevo telescopio, se debe escribir todo un nuevo sistema de control de telescopio (TCS en inglés). Se podría decir que hay casi un TCS por telescopio del mundo. Es evidente, de todos modos, que algunas secciones del código de cada TCS son bastante similares entre todos ellos, al igual que la transformación de coordenadas. El sistema de control del telescopio genérico (gTCS) pretendía ser un marco de base para el desarrollo y despliegue de la TCS de cualquier telescopio, independiente de su estructura física y el tipo de montaje que presenta}{}{}{}
+
+\cventry{CSAT}{Control System for Amateur Telescope}{El Sistema de Control de Telescopios Amateur es un TCS (Sistema de Control de telescopio) diseñado y construido para operar un telescopio de aficionado. El control se realiza por ACS, y la idea principal era que este TCS fuera utilizada como una guía para los gTCS.
+Telescope Simulation Environment (TelSE): Los obejtivos de este proyecto eran proporcionar un entorno de simulación completa para el proyecto gTCS y diseñar un marco genérico de simulación basado en el simulador de control de ALMA, identificando las piezas comunes de un sistema de simulación para diferentes telescopios y dispositivos de hardware relacionados.
+}{}{}{}
+
+%AIA
+\cventry{MDAS}{Methodology for development of array schedulers}{El objetivo principal de este proyecto era definir una metodología que consiste en flujos de trabajo y herramientas de desarrollo para apoyar el diseño, implementación, evaluación y despliegue de algoritmos para el ASP. Los objetivos específicos eran proporcionar un flujo de trabajo para los investigadores para que iterativamente puedan desarrollar, depurar, probar y perfilar sus algoritmos, automatizar la mayor cantidad de este flujo de trabajo que sea posible; permitir la reutilización de código mediante la definición de interfaces comunes; reutilizar herramientas de desarrollo, bibliotecas y metodologías; permitir que la exploración de hardware paralelo transparente}{}{}{}
+
+\cventry{ASP}{Array Scheduling problem}{Este problema está basado en la planificación de observaciones de ALMA, en donde los recursos son los arreglos de antenas y las tareas son las observaciones, y se busca utilizar de la forma más eficiente los recursos. Para las implementaciones específicas de cada solución se usó un modelo de problema en común}{}{}{}
+
+\cventry{ASPu*}{Array Scheduling using Simulated Annealing, Tabú Search, Evolutive Algorithm}{El objetivo de este proyecto era el estudio del comportamiento de las Heurísticas de Simulated Annealing, Tabú Search y Evolitve Algorithm con el problema de Array Scheduling}{}{}{}
+
+\cventry{ADSP}{ALMA Dynamic Scheduling Problem Formalization}{Este proyecto buscaba investigar el problema dinámico de programación que se plantea en el proyecto ALMA. ALMA es un proyecto multinacional compuesto por 66 antenas de radiotelescopio, que tienen que ser coordinadas, y su tiempo de las observaciones tienen que ser cuidadosamente planeadas, lo que permite utilizar eficazmente el tiempo disponible para la observación, y para el mantenimiento. El objetivo final de este proyecto es desarrollar y comparar varios algoritmos para este problema}{}{}{}
+
+\cventry{MAWRF}{Metheorogical Analysis base on WRF model}{Debido al interés de conocer cuál era el nivel de lo que tenían en cualquier dirección que una antena se dirigía, el objetivo del proyecto era tener un código de Matlab que hiciera una aproximación numérica con los datos discretos que eran simulados en el Cluster de la Universidad de Valparaíso. Además tener el código de cálculo de la aproximación en cualquier dominio de esta resolución, y en cualquier  que tenga la antena y luego tener el código en un software libre como Octave.
+}{}{}{}
+
+\section{Docencia y Pregrado}
+\cventry{AstroCouses}{Astronomy related Courses for 2010-2, 2013-1}{Curso electivo del área de sistemas computacionales. En este curso los alumnos aprendían temas fundamentales para comprender astronomía, y cuáles son sus implicancias dentro de la astro-ingeniería, y en particular, informática. El objetivo general de este curso era dar al alumno suficiente conocimiento para saber cuáles son los diversos tipos de telescopios, sistemas computacionales envueltos, y las características de los distintos proyectos de astronomía}{}{}{}
+
+\cventry{RPC}{Remote Python Course}{El objetivo del curso para los estudiantes es ser capaces de programar en Python con el fin de utilizar eficazmente la interfaz orientada a objetos de dispositivos de ALMA. El público objetivo son: los ingenieros electrónicos, ingenieros mecánicos, operadores del telescopio del observatorio ALMA}{}{}{}
+
+\cventry{LegoFarm}{LegoFarm Project}{LegoFarm Project: BrainStorm a través del producto LegoFarm, entrega un entorno de simulación del movimiento de las antenas del proyecto ALMA a través de kits Lego Mindstorms NXT. Dicho software tiene como objetivo lograr movimientos coordinados de las antenas simuladas. El resultado final de LegoFarm será útil como un ejemplo para los distintos cursos y congresos que están siendo realizados con la idea de enseñar acerca de Sistemas Distribuidos}{}{}{}
+
+\cventry{Lego}{Lego Project}{El objetivo del proyecto es el desarrollo de modelos a escala de Lego para simular los movimientos de las antenas y el transportador, los cuales se utilizan en ALMA. Cada modelo debe tener un paso a paso, el manual de instrucciones de montaje, que contiene la lista detallada de las piezas necesarias para su construcción, además de los costos asociados. El proyecto nació en el contexto de ALMA Education and Public Outreach, el cual es una tarea difícil teniendo en cuenta la especificidad del proyecto. Puede que sea relativamente fácil de explicar a los ingenieros y científicos, a los que el alcance técnico es más fácil de entender. Sin embargo, se sabe que para la familia, la comunidad y los estudiantes, la comprensión de este proyecto demuestra que es mucho más complicado. Los robots tienen por objeto simplificar este trabajo y llegar a ser una \"herramienta\" alternativa para difundir ALMA para el público. Hecho con piezas de LEGO, la Antena y Transportador son controlados de forma inalámbrica por un software de control, lo que les permite hacer sus movimientos más representativos}{}{}{}
+
+\cventry{ALS}{ALMA LEGO Simulator}{Es el producto de la feria de software que implementó el Lego Project. En este proyecto el equipo construyó los modelos de las antenas y transportador usando más de diez mil piezas, y el software de control está basado en ACS. Este proyecto tuvo un fuerte énfasis en el desarrollo de software, debido a que la simulación de la interacción entre la antena y el transportador es muy complejo. La simulación es capaz de tener un control coordinado, donde el software controla simultáneamente los dos modelos al mismo tiempo por conexión bluetooth}{}{}{}
+
+\cventry{TLEGOscope}{Radio TLEGOscope}{Este proyecto fue la continuación de ALS pero solo de la antena. Se crearon dos modelos a escala más pequeñas, en el orden de 800 piezas cada uno. Además se creó un nuevo software de control más simplificado que no usa ACS}{}{}{}
+
+\cventry{Hevelius Project}{Hevelius Project}{Hevelius es un sistema de interfaz gráfica de usuario de control del telescopio, diseñado y desarrollado para operar en telescopio amateur. La funcionalidad de control está a cargo de ACS, y el principal objetivo de Hevelius es ser una referencia para el control genérico de Telescopios}{}{}{}
+
+\renewcommand{\refname}{Publicaciones, Tesis y Reportes Técnicos}
+\bibliographystyle{alpha}
+\thispagestyle{empty}
+\nocite{*}
+\bibliography{bib/csrg,bib/theses,bib/reports}
+
+\end{document}
