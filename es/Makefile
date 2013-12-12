@@ -17,7 +17,6 @@ pdflatex: $(TEXFILES)
 	@TEXMFOUTPUT=`pwd` bibtex `pwd`/theses
 	@TEXMFOUTPUT=`pwd` bibtex `pwd`/reports
 	@pdflatex $(TEXFILES:.tex=)
-	@pdflatex $(TEXFILES:.tex=)
 	@if [ -d publish ];then mv *.pdf publish; else mkdir publish; mv *.pdf publish/;fi
 
 clean:
